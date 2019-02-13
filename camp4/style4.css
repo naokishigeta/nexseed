@@ -1,0 +1,86 @@
+.container{
+  width:800px;
+  margin:auto;
+}
+
+.header{
+position:relative;/*追加*/
+/*子要素にabsolutoを使用したので、必ず親にrelativeを入れる*/
+
+background-color: red;
+height: 100px;
+width:800px;
+}
+
+.header-right{
+position:absolute;
+top:20px;
+right:20px;
+padding:10px;
+background-color:white ;
+}
+
+.header-right>li{
+  height:40px;
+  width: 40px;
+  background-color:green; 
+  float:left;
+  margin-left:10px;
+}
+
+.header-right>li:first-child{
+  margin-left:0px;
+}
+
+.left{
+  position: relative;
+  float:left;
+  background-color:yellow;
+  height:400px;
+  width:200px;
+
+}
+
+.sidebaar-box{
+  position:absolute;
+  top:50px;
+  left:50px;
+}
+
+
+.sidebar-box>li{
+  height:50px;
+  width: 100px;
+  background-color:#ff1493; 
+  margin:50px;
+}
+
+.sider-box>li:last-child{
+  margin-bottom:0px;
+}
+
+.right{
+  float:left;
+  background-color:blue;
+  height:400px;
+  width:600px;
+
+}
+
+
+.footer{
+  background-color:green;
+  height:100px;
+  width:800px;
+
+}
+
+.clearfix::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/*.clearfix{
+  overflow: hidden;
+}*/

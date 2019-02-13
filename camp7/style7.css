@@ -1,0 +1,16 @@
+.bg{
+  background:url(../img/img.jpg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 800px
+}
+
+
+.bg>div{
+  color:white;
+}
+
+.bg>a{
+  color:gray;
+}

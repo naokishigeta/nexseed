@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome NexSeed Okinawa</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header -->
+  <header id="fixed">
+    <!-- header左側 -->
+    <div class="icon">
+      <img src="img/seedkun.png" alt="Seedkun">
+      <span class="name"><strong>Seed</strong>Kun</span>
+    </div>
+    <!-- header右側 -->
+    <ul class="header-right">
+      <li>新規登録</li>
+      <li>ログイン</li>
+    </ul>
+  </header>
+
+
+<!-- welcomeここから -->
+<main class="welcome" id="margin-for-fixed">
+  <h1 class="title">Welcome to NexSeed Okinawa</h1>
+  <ul class="guideline">
+    <li>Be Athelete</li>
+    <li>Go World</li>
+    <li>Enjoy Everything</li>
+  </ul>
+
+  <div class="btn-group">
+    <button class="btn register">新規登録</button>
+    <button class="btn login">ログイン</button>
+  </div>
+</main>
+
+<main class="curriculum">
+  <h2 class="sub-title">
+    NexSeed Life
+  </h2>
+  <ul class="img-box">
+    <li><img src="img/programming.jpg" alt="english"><span>programing</span></li>
+    <li><img src="img/enjoy.jpg" alt="enjoy"><span>English</span></li>
+    <li><img src="img/programming.jpg" alt="programing"><span>Enjoy</span></li>
+  </ul>
+</main>
+
+<!-- asideタグ　.contact
+子要素：h２ .sub-title[contact us]
+aside子要素formタグ；で囲う
+form小要素：div.form
+div.form子要素：div.form-left -->
+
+<aside class="contact">
+  <h2 class="sub-title">contact us</h2>
+ 
+  <form action="">
+    <div class="form">
+     <!-- 左側のフォーム -->
+      <div class="form-left">
+        <!-- fieldsetでまとめるとtabで移動できるようになる -->
+        <fieldset>
+          <input type="text" class="name" placeholder="お名前">
+        </fieldset>
+        <fieldset>
+          <input type="email" class="email" placeholder="メールアドレス">
+        </fieldset>
+      </div>
+
+      <!-- 右側のフォーム -->
+      <fieldset>
+        <textarea name="" class="inquiry" placeholder="お問い合わせ内容"></textarea>
+      </fieldset>
+
+    </div>
+    <button>submit</button>
+  </form>
+</aside>
+
+<!-- フッターここから -->
+
+<footer>
+  <!-- フッター左側 -->
+  <div class="icon">
+      <img src="img/seedkun.png" alt="Seedkun">
+      <span class="name"><strong>Seed</strong>Kun</span>
+  </div>
+
+<!-- フッター右側 -->
+<p class="footer-right">
+  Copyright (c) SeedKun inc
+</p>
+</footer>
+
+
+
+
+
+</body>
+</html>

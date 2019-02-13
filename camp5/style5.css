@@ -1,0 +1,44 @@
+.container{
+  margin:auto;
+  padding-top:100px;
+  height:800px;
+  width:1200px;
+  background-color: #888;
+}
+
+/*ボックステキストを中央寄せに*/
+
+.box{
+text-align: center;
+/*子要素を中央揃えにしたいときに使用する*/
+
+}
+
+.box>li{
+
+  background-color: white;
+  padding:10px;
+  font-size: 30px;
+  color: #f00;
+  width:20%;
+  display:inline-block;
+  /*ブロック要素をインライン要素のように使用する*/
+  word-break: break-all;
+  /*改行処理のルールを決める*/
+  box-sizing:border-box;
+  border:5px solid black;
+
+}
+
+.box li:nth-child(1){
+  margin-right: 5%;
+  /**5%は画面全体の５％だよ/**/
+}
+
+.box li:nth-child(2){
+  margin-right: 5%;
+}
+
+.box li:nth-child(3){
+  margin-right: 5%;
+}

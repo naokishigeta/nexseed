@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="utf-8">
+  <meta name="viewport"content="width=device-width,initial-scale=1.0"> -->
+  <title>js練習１</title>
+ <!--  <link rel="stylesheet" type="text/css" href="../reset.css"> 
+  <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<body>
+
+<div>
+  <p id="test">DOM操作テスト</p>
+</div>
+
+<!-- href でjavascript動かしてアラートを出す方法 -->
+<div>
+  <a href="JavaScript:window.alert('OK')">あら〜と</a>
+
+  <!-- DOM操作、IDのイベントでfuncionを動かして、アラート出す方法 -->
+  <button id="alertbtn">アラートボタン</button>
+
+  <button onclick="btn_click()">怪しいボタン</button>
+
+</div>
+
+<!-- テキストから離れたらアラートします -->
+<div>
+<input type="text" onblur="btn_click()">
+<input type="text">
+</div>
+
+<button id="btn">ボタン</button>
+
+<!-- 課題 -->
+<button id="alertbtn2">課題</button>
+
+<!-- <課題解答＞ -->
+<button id="btn_event" onclick="btn_click_h()">イベントハンドラ宿題</button>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>

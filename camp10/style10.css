@@ -1,0 +1,169 @@
+.sample1{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 50px 100px;
+}
+
+.sample1 header{
+  background-color: blue;
+  grid-column: 1/3;
+  grid-row:1;
+}
+
+.sample1 aside{
+  background-color: yellow;
+  grid-column: 1;
+  grid-row:2;
+}
+
+.sample1 main{
+  background-color: skyblue;
+  grid-column: 2;
+  grid-row:2;
+}
+
+.mt5{
+  height:200px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50px 150px 200px;
+  grid-gap: 20px 50px;
+ /* grid-column-gap: 50px;
+  grid-row-gap: 20px;*/
+
+  background-color: aqua;
+  padding:10px;
+}
+
+.grid-item{
+  background-color: gray;
+  color:white;
+  font-size: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ text-align:center;
+}
+
+.grid-item:first-child{
+  grid-column: 1/4;
+  /*grid-row: 1;*/
+}
+
+.grid-item:nth-child(2){
+  /*grid-column: 1;*/
+  grid-row: 2/4;
+  /*grid-row:2/span2;*/
+}
+
+.grid-item:nth-child(3){
+  grid-column:2/4 ;
+  grid-row: 2/4;
+  /*rowの始まり/columnの始まり/row終わり/column終わり*/
+  grid-area: 2/2/4/4;
+}
+
+.sample3{
+display:grid;
+grid-auto-rows:100px; 
+/*親要素に従って画面がフィットします*/
+grid-template-columns:repeat(auto-fit, 100px);
+justify-content: center;
+}
+
+.sample3 div{
+  border: 1px solid #ddd;
+  background-color: #c9f4ff;
+  box-sizing: border-box;
+  margin:3px;
+}
+
+/*ここから練習だよ*/
+
+.sample4{
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  /*grid-template-rows: 100px 300px 300px 100px;*/
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-gap: 10px;
+  height:80vh;
+}
+
+.sample4 .grid-item:first-child{
+  background-color: pink;
+  grid-column:1/5 ;
+  grid-row: 1;
+
+}
+
+.sample4 .grid-item:nth-child(2){
+  background-color:skyblue;
+  grid-column:1/2 ;
+  grid-row: 2/4;
+}
+
+.sample4 .grid-item:nth-child(3){
+  background-color: green;
+  grid-column:2/4;
+  grid-row: 2/4;
+}
+
+.sample4 .grid-item:nth-child(4){
+  background-color: yellow;
+ /* grid-column:4/5 ;*/
+  grid-row: 2/4;
+}
+
+.sample4 .grid-item:nth-child(5){
+  background-color: orange;
+  grid-column:1/5 ;
+ /* grid-row: 4/5;*/
+}
+
+.sample5{
+  background-color: #ddd;
+  display:grid;
+  grid-template-rows:  100px 1fr 100px;
+  grid-template-columns:1fr 2fr 1fr;
+  grid-gap: 0;
+  grid-template-areas: 'header header header'
+                       'nav main aside'
+                       'footer footer footer';
+                       /*この黄色で個別のグリッドを指定している*/
+  height:100vh;
+}
+
+
+.sample5 header{
+  grid-area:header;/*この白い奴が上の黄色と紐付いているよ*/
+  background-color: green;
+}
+
+.sample5 nav{
+  grid-area: nav;
+  background-color: aqua;
+}
+
+.sample5 main{
+  grid-area: main;
+  background-color: red;
+
+}
+
+.sample5 aside{
+  grid-area: aside;
+  background-color: yellow;
+}
+
+.sample5 footer{
+  grid-area: footer;
+  background-color: green;
+}
+
+
+
+
